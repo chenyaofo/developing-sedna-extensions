@@ -1,0 +1,50 @@
+apiVersion: sedna.io/v1alpha1
+kind: JointInferenceService
+metadata:
+  name: image-classification-jointinference-example
+  namespace: default
+spec:
+  edgeWorker:
+    model:
+      name: "image-classification-inference-mbv2-shallow-model"
+    hardExampleMining:
+      name: "IBT"
+      parameters:
+        - key: "threshold_img"
+          value: "0.9"
+        - key: "threshold_box"
+          value: "0.9"
+    template:
+      spec:
+        nodeName: $EDGE_NODE
+        dnsPolicy: ClusterFirstWithHostNet
+        containers:
+        - image: cloud-image:placeholder
+          imagePullPolicy: IfNotPresent
+          name:  image-cls-edge-workload
+          env:  # user defined environments
+          - name: infer_device
+            value: placeholder
+          - name: dataset
+            value: placeholder
+          resources:  # user defined resources
+            requests:
+              memory: 4Gi
+
+  cloudWorker:
+    model:
+      name: "image-classification-inference-mbv2-deep-model"
+    template:
+      spec:
+        nodeName: $CLOUD_NODE
+        dnsPolicy: ClusterFirstWithHostNet
+        containers:
+          - image: edge-image:placeholder
+            name:  image-cls-cloud-workload
+            imagePullPolicy: IfNotPresent
+            env:  # user defined environments
+              - name: infer_device
+                value: placeholder
+            resources:  # user defined resources
+              requests:
+                memory: 4Gi

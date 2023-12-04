@@ -1,0 +1,8 @@
+apiVersion: sedna.io/v1alpha1
+kind: Model
+metadata:
+  name: image-classification-inference-mbv2-shallow-model
+  namespace: default
+spec:
+  url: "placeholder"
+  format: "pts"
