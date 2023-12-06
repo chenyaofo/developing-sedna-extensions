@@ -7,13 +7,6 @@ spec:
   edgeWorker:
     model:
       name: "image-classification-inference-mbv2-shallow-model"
-    hardExampleMining:
-      name: "IBT"
-      parameters:
-        - key: "threshold_img"
-          value: "0.9"
-        - key: "threshold_box"
-          value: "0.9"
     template:
       spec:
         nodeName: $EDGE_NODE
