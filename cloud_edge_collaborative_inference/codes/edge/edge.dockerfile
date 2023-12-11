@@ -36,6 +36,6 @@ RUN /opt/conda/bin/mamba create -n dev python=${PYTHON_VERSION} && \
     PIP_INSTALL="/opt/conda/envs/dev/bin/pip install --no-cache-dir" && \
     $PIP_INSTALL -r /workspace/requirements.txt
 
-ENTRYPOINT ["python"]
+ENTRYPOINT ["/opt/conda/envs/dev/bin/python"]
 
 CMD ["main.py"]  
