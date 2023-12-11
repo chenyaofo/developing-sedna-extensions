@@ -14,4 +14,6 @@ Please build the docker images and push them into our registry `cr.scut-smil.cn`
 
 cd directory `k8s_resources` and `kubectl kustomize ./`
 
-Tips for debugging: you can use `kustomize build ./` to render the actual K8S resources
+Tips for debugging: you can use `kustomize build ./` to render the actual K8S resources.
+
+Please pay attention to the nodes allocated for "cloud" and "edge" workloads (field `nodeName` in `joininference.yaml`).
