@@ -1,5 +1,6 @@
 import logging
 
+import os
 import torch
 
 from sedna.common.config import Context
@@ -7,6 +8,8 @@ from sedna.common.config import Context
 from utils import download_file_to_temp
 
 LOG = logging.getLogger(__name__)
+
+os.environ['BACKEND_TYPE'] = 'TORCH'
 
 class Estimator:
     def __init__(self, **kwargs):
