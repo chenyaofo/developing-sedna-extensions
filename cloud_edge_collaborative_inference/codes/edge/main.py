@@ -33,6 +33,7 @@ def preprocess(item):
         transforms.ToTensor(),
         transforms.Normalize(mean=[0.485, 0.456, 0.406],
                              std=[0.229, 0.224, 0.225]),
+        transforms.Lambda(lambda tensor: tensor.unsqueeze(0))
     ])
     return f(item)
 
@@ -51,8 +52,8 @@ def main():
 
     # TODO: switch to another model: the shadow model is able to provide predictions
 
-        LOG.info(f"For image {s3_image_path}, inferred result is {cloud_result}")
-
+        LOG.info(
+            f"For image {s3_image_path}, inferred result is {cloud_result}")
 
 
 if __name__ == '__main__':
