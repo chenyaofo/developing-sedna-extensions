@@ -4,5 +4,6 @@ metadata:
   name: image-classification-inference-mbv2-shallow-model
   namespace: default
 spec:
-  url: "placeholder"
+  url : "s3://cloud-edge/mobilenet_v2_shallow.pts"
   format: "pts"
+  credentialName: mysecret

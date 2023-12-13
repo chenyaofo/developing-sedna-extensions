@@ -21,9 +21,11 @@ class Estimator:
         self.infer_device = Context.get_parameters('infer_device')
 
     def load(self, model_url=""):
-        local_model_path = download_file_to_temp(model_url)
+        print('***********************************************************')
+        print('model_url:', model_url)
+        # local_model_path = download_file_to_temp(model_url)
         LOG.info(
-            f"Load model from local path ({local_model_path}) | remote path ({model_url})")
+            f"Load model from local path ({model_url}) | remote path ({model_url})")
         self.model = torch.jit.load(local_model_path).to(device=self.infer_device).eval()
 
     def predict(self, data, **kwargs):

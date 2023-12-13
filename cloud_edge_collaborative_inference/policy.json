@@ -1,0 +1,33 @@
+{
+    "acl": {
+        "acl_user_map": [
+            {
+                "user": "smil",
+                "acl": 15
+            }
+        ],
+        "acl_group_map": [],
+        "grant_map": [
+            {
+                "id": "smil",
+                "grant": {
+                    "type": {
+                        "type": 0
+                    },
+                    "id": "smil",
+                    "email": "",
+                    "permission": {
+                        "flags": 15
+                    },
+                    "name": "SMIL",
+                    "group": 0,
+                    "url_spec": ""
+                }
+            }
+        ]
+    },
+    "owner": {
+        "id": "smil",
+        "display_name": "SMIL"
+    }
+}

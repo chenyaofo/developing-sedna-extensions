@@ -7,12 +7,14 @@ spec:
   edgeWorker:
     model:
       name: "image-classification-inference-mbv2-shallow-model"
+    hardExampleMining:
+      name: "IBT"
     template:
       spec:
-        nodeName: $EDGE_NODE
+        nodeName: edge-2
         dnsPolicy: ClusterFirstWithHostNet
         containers:
-        - image: cloud-image:placeholder
+        - image: edge-image:placeholder
           imagePullPolicy: IfNotPresent
           name:  image-cls-edge-workload
           env:  # user defined environments
@@ -29,14 +31,16 @@ spec:
       name: "image-classification-inference-mbv2-deep-model"
     template:
       spec:
-        nodeName: $CLOUD_NODE
+        nodeName: edge-1
         dnsPolicy: ClusterFirstWithHostNet
         containers:
-          - image: edge-image:placeholder
+          - image: cloud-image:placeholder
             name:  image-cls-cloud-workload
             imagePullPolicy: IfNotPresent
             env:  # user defined environments
               - name: infer_device
+                value: placeholder
+              - name: dataset
                 value: placeholder
             resources:  # user defined resources
               requests:

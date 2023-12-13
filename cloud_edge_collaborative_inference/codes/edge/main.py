@@ -42,7 +42,6 @@ def main():
     root = Context.get_parameters("dataset")
     inference_instance = SplitInference(estimator=Estimator)
 
-    # TODO: from camera, the current version is from s3 storage
     for s3_image_path in list_images_in_s3_path(root):
         image_path = download_file_to_temp(s3_image_path)
         img_rgb = preprocess(image_path)
@@ -50,10 +49,7 @@ def main():
             inference_instance.inference(img_rgb)
         )
 
-    # TODO: switch to another model: the shadow model is able to provide predictions
-
-        LOG.info(
-            f"For image {s3_image_path}, inferred result is {cloud_result}")
+        LOG.info(f"For image {s3_image_path}, inferred result is {cloud_result}")
 
 
 if __name__ == '__main__':

@@ -4,5 +4,6 @@ metadata:
   name: image-classification-inference-mbv2-deep-model
   namespace: default
 spec:
-  url: "s3://xxx/mobilenet_v2_deep.pts"
+  url : "s3://cloud-edge/mobilenet_v2_deep.pts"
   format: "pts"
+  credentialName: mysecret

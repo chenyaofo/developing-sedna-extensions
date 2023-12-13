@@ -16,9 +16,10 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends --no-install-suggest
     DEBIAN_FRONTEND=noninteractive $APT_INSTALL tzdata && \
     ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime && \
     echo ${TZ} > /etc/timezone && \
-    dpkg-reconfigure --frontend noninteractive tzdata &&
+    dpkg-reconfigure --frontend noninteractive tzdata && \
+    apt-get install wget -y
 
-RUN wget https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-Linux-x86_64.sh -O ~/installer.sh && \
+RUN wget https://mirror.ghproxy.com/https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-Linux-x86_64.sh -O ~/installer.sh && \
     /bin/bash ~/installer.sh -b -p /opt/conda && \
     rm ~/installer.sh && \
     /opt/conda/bin/conda init bash && \
@@ -32,9 +33,10 @@ WORKDIR /workspace
 RUN /opt/conda/bin/mamba create -n dev python=${PYTHON_VERSION} && \
     CONDA_INSTALL="/opt/conda/bin/mamba install -n dev -y" && \
     /opt/conda/bin/mamba clean -afy && \
+    /opt/conda/bin/mamba install git && \
     echo 'Conda Install Done!' && \
     PIP_INSTALL="/opt/conda/envs/dev/bin/pip install --no-cache-dir" && \
-    $PIP_INSTALL -r /workspace/requirements.txt
+    $PIP_INSTALL -r /workspace/requirements.txt -i https://pypi.scut-smil.cn/simple
 
 ENTRYPOINT ["/opt/conda/envs/dev/bin/python"]
 

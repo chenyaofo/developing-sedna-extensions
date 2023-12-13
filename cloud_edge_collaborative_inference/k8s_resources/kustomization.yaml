@@ -8,11 +8,11 @@ images:
     - name: cloud-image:placeholder
       # modify the following images
       newName: cr.scut-smil.cn/sedna-learning/jointinference-image-classification-cloud
-      newTag: 0.0.1
+      newTag: 0.0.5
     - name: edge-image:placeholder
       # modify the following images
       newName: cr.scut-smil.cn/sedna-learning/jointinference-image-classification-edge
-      newTag: 0.0.1
+      newTag: 0.0.5
 patches:
   - target:
       group: sedna.io
@@ -23,7 +23,7 @@ patches:
     patch: |-
       - op: replace
         path: /spec/url
-        value: "s3://new-url/mobilenet_v2_shallow.pts"
+        value: "s3://cloud-edge/mobilenet_v2_shallow.pts"
   - target:
       group: sedna.io
       version: v1alpha1
@@ -33,7 +33,7 @@ patches:
     patch: |-
       - op: replace
         path: /spec/url
-        value: "s3://new-url/mobilenet_v2_deep.pts"
+        value: "s3://cloud-edge/mobilenet_v2_deep.pts"
   - target:
       group: sedna.io
       version: v1alpha1
@@ -62,5 +62,5 @@ patches:
     # modify the following dataset path
     patch: |-
       - op: replace
-        path: /spec/edgeWorker/template/spec/containers/0/env/2/value
-        value: "s3://xxx/image-folder"
+        path: /spec/edgeWorker/template/spec/containers/0/env/1/value
+        value: "s3://cloud-edge/test-image"

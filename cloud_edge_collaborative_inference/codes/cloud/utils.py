@@ -4,7 +4,8 @@ import os
 import logging
 
 LOG = logging.getLogger(__name__)
-
+access_key = "EGKIKHO2SD0X2ILV4K67"
+secret_key = "UDkZAbj0gZXIKGRCAjYMav8bqQr4zmOXSa02SRDF"
 
 def download_file_to_temp(s3_path):
     """
@@ -21,7 +22,14 @@ def download_file_to_temp(s3_path):
     bucket_name = s3_path[:first_slash_index]
     s3_file_name = s3_path[first_slash_index + 1:]
 
-    s3 = boto3.client('s3')
+    s3 = boto3.client(
+        service_name='s3',
+        aws_access_key_id=access_key,
+        aws_secret_access_key=secret_key,
+        endpoint_url='https://ceph-s3-b7-1.scut-smil.cn',
+        verify=True
+    )
+    print(bucket_name,s3_file_name)
     try:
         with tempfile.NamedTemporaryFile(delete=False) as temp_file:
             s3.download_file(bucket_name, s3_file_name, temp_file.name)
