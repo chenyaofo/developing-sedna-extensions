@@ -1,0 +1,96 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - edge_model.yaml
+  - cloud_model.yaml
+  - joininference.yaml
+images:
+    - name: cloud-image:placeholder
+      # modify the following images
+      newName: cr.scut-smil.cn/sedna-learning/jointinference-image-classification-cloud
+      newTag: 0.0.1
+    - name: edge-image:placeholder
+      # modify the following images
+      newName: cr.scut-smil.cn/sedna-learning/jointinference-image-classification-edge
+      newTag: 0.0.1
+patches:
+  - target:
+      group: sedna.io
+      version: v1alpha1
+      kind: Model
+      name: image-classification-inference-mbv2-tta-model
+    # modify the following model url
+    patch: |-
+      - op: replace
+        path: /spec/url
+        value: "s3://new-url/mobilenet_v2.pt"
+  - target:
+      group: sedna.io
+      version: v1alpha1
+      kind: JointInferenceService
+      name: image-classification-tta-example
+    # modify the following inferred device
+    patch: |-
+      - op: replace
+        path: /spec/edgeWorker/template/spec/containers/0/env/0/value
+        value: "cuda"
+  - target:
+      group: sedna.io
+      version: v1alpha1
+      kind: JointInferenceService
+      name: image-classification-tta-example
+    # hyperparameter from eta, do not change
+    patch: |-
+      - op: replace
+        path: /spec/edgeWorker/template/spec/containers/0/env/1/value
+        value: "2.7631"
+  - target:
+      group: sedna.io
+      version: v1alpha1
+      kind: JointInferenceService
+      name: image-classification-tta-example
+    # modify the following inferred device
+    patch: |-
+      - op: replace
+        path: /spec/cloudWorker/template/spec/containers/0/env/0/value
+        value: "cuda"
+  - target:
+      group: sedna.io
+      version: v1alpha1
+      kind: JointInferenceService
+      name: image-classification-tta-example
+    # modify the following dataset path
+    patch: |-
+      - op: replace
+        path: /spec/edgeWorker/template/spec/containers/0/env/1/value
+        value: "s3://xxx/image-folder"
+  - target:
+      group: sedna.io
+      version: v1alpha1
+      kind: JointInferenceService
+      name: image-classification-tta-example
+    # hyperparameter from eta, do not change
+    patch: |-
+      - op: replace
+        path: /spec/edgeWorker/template/spec/containers/0/env/2/value
+        value: "2.7631"
+  - target:
+      group: sedna.io
+      version: v1alpha1
+      kind: JointInferenceService
+      name: image-classification-tta-example
+    # hyperparameter from eta, do not change
+    patch: |-
+      - op: replace
+        path: /spec/edgeWorker/template/spec/containers/0/env/3/value
+        value: "0.05"
+  - target:
+      group: sedna.io
+      version: v1alpha1
+      kind: JointInferenceService
+      name: image-classification-tta-example
+    # hyperparameter from eta, do not change
+    patch: |-
+      - op: replace
+        path: /spec/edgeWorker/template/spec/containers/0/env/2/value
+        value: "0.0025"
