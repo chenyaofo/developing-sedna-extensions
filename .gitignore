@@ -118,3 +118,4 @@ dmypy.json
 *.pth
 *.pts
 *.pt
+*.sh

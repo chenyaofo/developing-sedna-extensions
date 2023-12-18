@@ -26,7 +26,7 @@ class Estimator:
         # local_model_path = download_file_to_temp(model_url)
         LOG.info(
             f"Load model from local path ({model_url}) | remote path ({model_url})")
-        self.model = torch.jit.load(local_model_path).to(device=self.infer_device).eval()
+        self.model = torch.jit.load(model_url).to(device=self.infer_device).eval()
 
     def predict(self, data, **kwargs):
         inputs = torch.tensor(data).to(device=self.infer_device)

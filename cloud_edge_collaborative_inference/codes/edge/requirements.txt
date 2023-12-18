@@ -1,4 +1,5 @@
 boto3==1.33.6
 torch==2.1.1
 torchvision==0.16.1
-git+https://github.com/kubeedge/sedna.git@main#subdirectory=lib
+# git
+git+https://mirror.ghproxy.com/https://github.com/kubeedge/sedna.git@main#subdirectory=lib
