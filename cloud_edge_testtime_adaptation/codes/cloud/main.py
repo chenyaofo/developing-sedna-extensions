@@ -1,3 +1,4 @@
+import time
 from custom import TTABigModelService
 from model import Estimator
 
@@ -8,4 +9,9 @@ def run():
 
 
 if __name__ == "__main__":
-    run()
+    try:
+        run()
+    except Exception as e:
+        print(f"An exception occurred: {e}")
+        print("Entering sleep mode to allow log review...")
+        time.sleep(3600)

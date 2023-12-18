@@ -52,4 +52,9 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except Exception as e:
+        print(f"An exception occurred: {e}")
+        print("Entering sleep mode to allow log review...")
+        time.sleep(3600)
