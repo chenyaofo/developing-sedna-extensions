@@ -32,9 +32,10 @@ class SplitInference(JobBase):
         self.lc_reporter.setDaemon(True)
         self.lc_reporter.start()
 
-        if callable(self.estimator):
-            self.estimator = self.estimator()
-            self.estimator.load(self.config.model_url)
+        print(type(self.estimator)) # TorchBackend
+        # if callable(self.estimator):
+        #     self.estimator = self.estimator()
+        self.estimator.load(self.config.model_url)
 
         self.cloud = ModelClient(service_name=self.job_name,
                                  host=self.remote_ip, port=self.port)
