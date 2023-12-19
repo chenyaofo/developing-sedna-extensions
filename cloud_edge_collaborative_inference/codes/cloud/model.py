@@ -19,6 +19,7 @@ class Estimator:
 
     def load(self, model_url=""):
         print('***********************************************************')
+        model_url = os.getenv("MODEL_URL")
         print('model_url:', model_url)
         # local_model_path = download_file_to_temp(model_url)
         LOG.info(

@@ -8,11 +8,11 @@ images:
     - name: cloud-image:placeholder
       # modify the following images
       newName: cr.scut-smil.cn/sedna-learning/jointinference-image-classification-cloud
-      newTag: 0.0.5
+      newTag: 0.1.0
     - name: edge-image:placeholder
       # modify the following images
       newName: cr.scut-smil.cn/sedna-learning/jointinference-image-classification-edge
-      newTag: 0.0.5
+      newTag: 0.1.2
 patches:
   - target:
       group: sedna.io

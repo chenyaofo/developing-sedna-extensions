@@ -39,6 +39,7 @@ def preprocess(item):
 
 
 def main():
+    logging.basicConfig(level=logging.INFO)
     root = Context.get_parameters("dataset")
     inference_instance = SplitInference(estimator=Estimator)
 

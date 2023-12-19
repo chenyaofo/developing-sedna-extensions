@@ -119,3 +119,4 @@ dmypy.json
 *.pts
 *.pt
 *.sh
+.JPEG

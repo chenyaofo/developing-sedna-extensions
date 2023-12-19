@@ -48,7 +48,7 @@ class SplitInference(JobBase):
 
         try:
             cloud_data = self.cloud.inference(
-                data.tolist(), post_process=post_process, **kwargs)
+                res, post_process=post_process, **kwargs)
             cloud_result = cloud_data["result"]
         except Exception as err:
             self.log.error(f"get cloud result error: {err}")
