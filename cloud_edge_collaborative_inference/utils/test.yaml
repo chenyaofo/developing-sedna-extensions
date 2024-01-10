@@ -1,0 +1,20 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  labels:
+    # app: my-test
+    node-role.kubernetes.io/edge: ""
+  name: my-test
+spec:
+  selector:
+    matchLabels:
+      node-role.kubernetes.io/edge: ""
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        node-role.kubernetes.io/edge: ""
+    spec:
+      containers:
+      - name: test
+        image: cr.scut-smil.cn/kubeedge/sedna-storage-initializer:v0.3.6

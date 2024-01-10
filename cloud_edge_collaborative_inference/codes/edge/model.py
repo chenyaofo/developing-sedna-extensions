@@ -5,7 +5,6 @@ import os
 
 from sedna.common.config import Context
 
-from utils import download_file_to_temp
 
 LOG = logging.getLogger(__name__)
 

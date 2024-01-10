@@ -11,7 +11,7 @@ spec:
       name: "IBT"
     template:
       spec:
-        nodeName: edge-2
+        nodeName: edge-1
         dnsPolicy: ClusterFirstWithHostNet
         containers:
         - image: edge-image:placeholder
@@ -31,7 +31,7 @@ spec:
       name: "image-classification-inference-mbv2-deep-model"
     template:
       spec:
-        nodeName: edge-1
+        nodeName: master
         dnsPolicy: ClusterFirstWithHostNet
         containers:
           - image: cloud-image:placeholder

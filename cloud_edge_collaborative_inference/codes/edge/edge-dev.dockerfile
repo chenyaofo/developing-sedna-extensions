@@ -27,18 +27,22 @@ RUN wget https://mirror.ghproxy.com/https://github.com/conda-forge/miniforge/rel
     find /opt/conda/ -follow -type f -name '*.a' -delete && \
     find /opt/conda/ -follow -type f -name '*.js.map' -delete
 
-COPY . /workspace/
-WORKDIR /workspace
 
 RUN /opt/conda/bin/mamba create -n dev python=${PYTHON_VERSION} && \
     CONDA_INSTALL="/opt/conda/bin/mamba install -n dev -y" && \
     /opt/conda/bin/mamba clean -afy && \
     /opt/conda/bin/mamba install git && \
-    echo 'Conda Install Done!' && \
-    PIP_INSTALL="/opt/conda/envs/dev/bin/pip install --no-cache-dir" && \
+    echo 'Conda Install Done!' 
+
+COPY requirements.txt /workspace/
+WORKDIR /workspace
+
+RUN PIP_INSTALL="/opt/conda/envs/dev/bin/pip install --no-cache-dir" && \
     $PIP_INSTALL -r /workspace/requirements.txt -i https://pypi.scut-smil.cn/simple
 
-# ENTRYPOINT ["nvidia-smi"]
+COPY . /workspace/
+RUN mkdir tmp/imagenet1000 -p
+# CMD [ "tail", "-f", "/dev/null" ]
 
 ENTRYPOINT ["/opt/conda/envs/dev/bin/python"]
 CMD ["main.py"]  

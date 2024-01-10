@@ -32,13 +32,15 @@ def download_file_to_temp(s3_path):
         endpoint_url='https://ceph-s3-b7-1.scut-smil.cn',
         verify=True
     )
-    print(bucket_name,s3_file_name)
     try:
-        with tempfile.NamedTemporaryFile(delete=False) as temp_file:
-            s3.download_file(bucket_name, s3_file_name, temp_file.name)
-            LOG.info(
-                f"Downloaded {s3_file_name} to temporary file {temp_file.name}")
-            return temp_file.name
+        # with tempfile.NamedTemporaryFile(delete=False) as temp_file:
+        # file_name = './cloud-edge/0_0.JPEG'
+        path_name = os.path.join('tmp',s3_file_name)
+        s3.download_file(Filename=path_name, Key=s3_file_name, Bucket=bucket_name)
+        # s3.download_file(bucket_name, s3_file_name, path_name)
+        # LOG.info(
+        #     f"Downloaded {s3_file_name} to temporary file {path_name}")
+        return path_name
     except Exception as e:
         LOG.error(f"Error: {e}")
         return None

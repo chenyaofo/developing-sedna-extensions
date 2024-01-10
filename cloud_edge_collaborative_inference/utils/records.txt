@@ -1,0 +1,234 @@
+云边协同平均推理时间：1.1921955352991969,
+            云端平均推理时间：0.11067246916282236,
+            边端平均推理时间：0.04954471279732624,
+            平均上传时间：0.754060970610054,
+            平均下发时间：0.027068270972712125,
+            准确率：0.0354
+***********************************************************
+model_url: /downloads/cloud-edge/resnet152_shallow.pts
+INFO:model:Load model from local path (/downloads/cloud-edge/resnet152_shallow.pts) | remote path (/downloads/cloud-edge/resnet152_shallow.pts)
+  0%|                                                                                                                                                   | 0/5000 [00:00<?, ?it/s]/workspace/model.py:32: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  inputs = torch.tensor(data).to(device=self.infer_device)
+  4%|█████▍                                                                                                                                 | 200/5000 [04:16<1:42:44,  1.28s/it]
+云边协同平均推理时间：1.1453424698084742,
+            云端平均推理时间：0.10074817363302506,
+            边端平均推理时间：0.04630223079700375,
+            平均上传时间：0.7386388233051965,
+            平均下发时间：0.022701781780565557,
+            准确率：0.0354
+***********************************************************
+model_url: /downloads/cloud-edge/resnet152_shallow.pts
+INFO:model:Load model from local path (/downloads/cloud-edge/resnet152_shallow.pts) | remote path (/downloads/cloud-edge/resnet152_shallow.pts)
+  0%|                                                                                                                                                   | 0/5000 [00:00<?, ?it/s]/workspace/model.py:32: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  inputs = torch.tensor(data).to(device=self.infer_device)
+  4%|█████▍                                                                                                                                 | 200/5000 [04:16<1:42:38,  1.28s/it]
+云边协同平均推理时间：1.1541298230489094,
+            云端平均推理时间：0.10175749318516669,
+            边端平均推理时间：0.04592305748023797,
+            平均上传时间：0.7409801827141301,
+            平均下发时间：0.023416669807623868,
+            准确率：0.0354
+***********************************************************
+model_url: /downloads/cloud-edge/resnet152_shallow.pts
+INFO:model:Load model from local path (/downloads/cloud-edge/resnet152_shallow.pts) | remote path (/downloads/cloud-edge/resnet152_shallow.pts)
+  0%|                                                                                                                                                   | 0/5000 [00:00<?, ?it/s]/workspace/model.py:32: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  inputs = torch.tensor(data).to(device=self.infer_device)
+  4%|█████▍                                                                                                                                 | 200/5000 [04:32<1:48:58,  1.36s/it]
+云边协同平均推理时间：1.2194064624273955,
+            云端平均推理时间：0.12115516828660348,
+            边端平均推理时间：0.04989625802680628,
+            平均上传时间：0.7700727745075131,
+            平均下发时间：0.024068771903194598,
+            准确率：0.0354
+***********************************************************
+model_url: /downloads/cloud-edge/resnet152_shallow.pts
+INFO:model:Load model from local path (/downloads/cloud-edge/resnet152_shallow.pts) | remote path (/downloads/cloud-edge/resnet152_shallow.pts)
+  0%|                                                                                                                                                   | 0/5000 [00:00<?, ?it/s]/workspace/model.py:32: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  inputs = torch.tensor(data).to(device=self.infer_device)
+  4%|█████▍                                                                                                                                 | 200/5000 [04:20<1:44:22,  1.30s/it]
+云边协同平均推理时间：1.1732306219452056,
+            云端平均推理时间：0.11214038388646064,
+            边端平均推理时间：0.047348050928827545,
+            平均上传时间：0.7526333403231492,
+            平均下发时间：0.023618387345650894,
+            准确率：0.0354
+***********************************************************
+model_url: /downloads/cloud-edge/resnet152_shallow.pts
+INFO:model:Load model from local path (/downloads/cloud-edge/resnet152_shallow.pts) | remote path (/downloads/cloud-edge/resnet152_shallow.pts)
+  0%|                                                                                                                                                   | 0/5000 [00:00<?, ?it/s]/workspace/model.py:32: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  inputs = torch.tensor(data).to(device=self.infer_device)
+  4%|█████▍                                                                                                                                 | 200/5000 [04:15<1:42:17,  1.28s/it]
+云边协同平均推理时间：1.1477045230011442,
+            云端平均推理时间：0.10063962082364666,
+            边端平均推理时间：0.04692979238519621,
+            平均上传时间：0.7378535484200093,
+            平均下发时间：0.02357741493490798,
+            准确率：0.0354
+***********************************************************
+model_url: /downloads/cloud-edge/resnet152_shallow.pts
+INFO:model:Load model from local path (/downloads/cloud-edge/resnet152_shallow.pts) | remote path (/downloads/cloud-edge/resnet152_shallow.pts)
+  0%|                                                                                                                                                   | 0/5000 [00:00<?, ?it/s]/workspace/model.py:32: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  inputs = torch.tensor(data).to(device=self.infer_device)
+  4%|█████▍                                                                                                                                 | 200/5000 [04:22<1:44:51,  1.31s/it]
+云边协同平均推理时间：1.180688863963037,
+            云端平均推理时间：0.10269996538684142,
+            边端平均推理时间：0.0479525298028443,
+            平均上传时间：0.7598995521887025,
+            平均下发时间：0.025546226928483195,
+            准确率：0.0354
+***********************************************************
+model_url: /downloads/cloud-edge/resnet152_shallow.pts
+INFO:model:Load model from local path (/downloads/cloud-edge/resnet152_shallow.pts) | remote path (/downloads/cloud-edge/resnet152_shallow.pts)
+  0%|                                                                                                                                                   | 0/5000 [00:00<?, ?it/s]/workspace/model.py:32: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  inputs = torch.tensor(data).to(device=self.infer_device)
+  4%|█████▍                                                                                                                                 | 200/5000 [04:36<1:50:29,  1.38s/it]
+云边协同平均推理时间：1.2515160847659135,
+            云端平均推理时间：0.15094653053663262,
+            边端平均推理时间：0.04703643191513138,
+            平均上传时间：0.7752863257678587,
+            平均下发时间：0.024984837764531226,
+            准确率：0.0354
+***********************************************************
+model_url: /downloads/cloud-edge/resnet152_shallow.pts
+INFO:model:Load model from local path (/downloads/cloud-edge/resnet152_shallow.pts) | remote path (/downloads/cloud-edge/resnet152_shallow.pts)
+  0%|                                                                                                                                                   | 0/5000 [00:00<?, ?it/s]/workspace/model.py:32: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  inputs = torch.tensor(data).to(device=self.infer_device)
+  4%|█████▍                                                                                                                                 | 200/5000 [04:18<1:43:27,  1.29s/it]
+云边协同平均推理时间：1.164559691699583,
+            云端平均推理时间：0.10660462592964742,
+            边端平均推理时间：0.04737593759944783,
+            平均上传时间：0.7422375548538284,
+            平均下发时间：0.024239164086716686,
+            准确率：0.0354
+***********************************************************
+model_url: /downloads/cloud-edge/resnet152_shallow.pts
+INFO:model:Load model from local path (/downloads/cloud-edge/resnet152_shallow.pts) | remote path (/downloads/cloud-edge/resnet152_shallow.pts)
+  0%|                                                                                                                                                   | 0/5000 [00:00<?, ?it/s]/workspace/model.py:32: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  inputs = torch.tensor(data).to(device=self.infer_device)
+  4%|█████▍                                                                                                                                 | 200/5000 [04:30<1:48:12,  1.35s/it]
+云边协同平均推理时间：1.2029406075453877,
+            云端平均推理时间：0.10212786636542324,
+            边端平均推理时间：0.05006168849432646,
+            平均上传时间：0.7726047667697887,
+            平均下发时间：0.02373706286226339,
+            准确率：0.0354
+***********************************************************
+model_url: /downloads/cloud-edge/resnet152_shallow.pts
+INFO:model:Load model from local path (/downloads/cloud-edge/resnet152_shallow.pts) | remote path (/downloads/cloud-edge/resnet152_shallow.pts)
+  0%|                                                                                                                                                   | 0/5000 [00:00<?, ?it/s]/workspace/model.py:32: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  inputs = torch.tensor(data).to(device=self.infer_device)
+  4%|█████▍                                                                                                                                 | 200/5000 [12:41<5:04:33,  3.81s/it]
+云边协同平均推理时间：1.1701598119972951,
+            云端平均推理时间：0.10141364496145676,
+            边端平均推理时间：0.04874780166208448,
+            平均上传时间：0.7485924466925474,
+            平均下发时间：0.022571301578882322,
+            准确率：0.0354
+***********************************************************
+model_url: /downloads/cloud-edge/resnet152_shallow.pts
+INFO:model:Load model from local path (/downloads/cloud-edge/resnet152_shallow.pts) | remote path (/downloads/cloud-edge/resnet152_shallow.pts)
+  0%|                                                                                                                                                   | 0/5000 [00:00<?, ?it/s]/workspace/model.py:32: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  inputs = torch.tensor(data).to(device=self.infer_device)
+  4%|█████▍                                                                                                                                 | 200/5000 [04:18<1:43:30,  1.29s/it]
+云边协同平均推理时间：1.1665301192459183,
+            云端平均推理时间：0.099640171326215,
+            边端平均推理时间：0.04824861483787423,
+            平均上传时间：0.7458025472081122,
+            平均下发时间：0.022188738210877374,
+            准确率：0.0354
+***********************************************************
+model_url: /downloads/cloud-edge/resnet152_shallow.pts
+INFO:model:Load model from local path (/downloads/cloud-edge/resnet152_shallow.pts) | remote path (/downloads/cloud-edge/resnet152_shallow.pts)
+  0%|                                                                                                                                                   | 0/5000 [00:00<?, ?it/s]/workspace/model.py:32: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  inputs = torch.tensor(data).to(device=self.infer_device)
+  4%|█████▍                                                                                                                                 | 200/5000 [04:13<1:41:31,  1.27s/it]
+云边协同平均推理时间：1.1438738825309336,
+            云端平均推理时间：0.0968746249355487,
+            边端平均推理时间：0.04712666207878151,
+            平均上传时间：0.7277703510588082,
+            平均下发时间：0.022175294249805053,
+            准确率：0.0354
+***********************************************************
+model_url: /downloads/cloud-edge/resnet152_shallow.pts
+INFO:model:Load model from local path (/downloads/cloud-edge/resnet152_shallow.pts) | remote path (/downloads/cloud-edge/resnet152_shallow.pts)
+  0%|                                                                                                                                                   | 0/5000 [00:00<?, ?it/s]/workspace/model.py:32: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  inputs = torch.tensor(data).to(device=self.infer_device)
+  4%|█████▍                                                                                                                                 | 200/5000 [04:21<1:44:41,  1.31s/it]
+云边协同平均推理时间：1.1848515716951284,
+            云端平均推理时间：0.1091646294095623,
+            边端平均推理时间：0.049267297953515504,
+            平均上传时间：0.750862202241053,
+            平均下发时间：0.022135120126145397,
+            准确率：0.0354
+***********************************************************
+model_url: /downloads/cloud-edge/resnet152_shallow.pts
+INFO:model:Load model from local path (/downloads/cloud-edge/resnet152_shallow.pts) | remote path (/downloads/cloud-edge/resnet152_shallow.pts)
+  0%|                                                                                                                                                   | 0/5000 [00:00<?, ?it/s]/workspace/model.py:32: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  inputs = torch.tensor(data).to(device=self.infer_device)
+  4%|█████▍                                                                                                                                 | 200/5000 [04:16<1:42:35,  1.28s/it]
+云边协同平均推理时间：1.157005297010811,
+            云端平均推理时间：0.10450182981158963,
+            边端平均推理时间：0.04897284151902839,
+            平均上传时间：0.7325082335306045,
+            平均下发时间：0.02264977450394512,
+            准确率：0.0354
+***********************************************************
+model_url: /downloads/cloud-edge/resnet152_shallow.pts
+INFO:model:Load model from local path (/downloads/cloud-edge/resnet152_shallow.pts) | remote path (/downloads/cloud-edge/resnet152_shallow.pts)
+  0%|                                                                                                                                                   | 0/5000 [00:00<?, ?it/s]/workspace/model.py:32: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  inputs = torch.tensor(data).to(device=self.infer_device)
+  4%|█████▍                                                                                                                                 | 200/5000 [04:27<1:46:53,  1.34s/it]
+云边协同平均推理时间：1.2173878731419199,
+            云端平均推理时间：0.13750665342036764,
+            边端平均推理时间：0.04719268267427511,
+            平均上传时间：0.7617456877409522,
+            平均下发时间：0.024106029254287037,
+            准确率：0.0354
+***********************************************************
+model_url: /downloads/cloud-edge/resnet152_shallow.pts
+INFO:model:Load model from local path (/downloads/cloud-edge/resnet152_shallow.pts) | remote path (/downloads/cloud-edge/resnet152_shallow.pts)
+  0%|                                                                                                                                                   | 0/5000 [00:00<?, ?it/s]/workspace/model.py:32: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  inputs = torch.tensor(data).to(device=self.infer_device)
+  4%|█████▍                                                                                                                                 | 200/5000 [04:31<1:48:46,  1.36s/it]
+云边协同平均推理时间：1.2257724223445303,
+            云端平均推理时间：0.12321294599504613,
+            边端平均推理时间：0.05014297380969299,
+            平均上传时间：0.7703493673409989,
+            平均下发时间：0.024162272315713305,
+            准确率：0.0354
+***********************************************************
+model_url: /downloads/cloud-edge/resnet152_shallow.pts
+INFO:model:Load model from local path (/downloads/cloud-edge/resnet152_shallow.pts) | remote path (/downloads/cloud-edge/resnet152_shallow.pts)
+  0%|                                                                                                                                                   | 0/5000 [00:00<?, ?it/s]/workspace/model.py:32: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  inputs = torch.tensor(data).to(device=self.infer_device)
+  4%|█████▍                                                                                                                                 | 200/5000 [04:27<1:46:59,  1.34s/it]
+云边协同平均推理时间：1.208024233727906,
+            云端平均推理时间：0.10270892328290797,
+            边端平均推理时间：0.04955316420218245,
+            平均上传时间：0.7755215855973276,
+            平均下发时间：0.024503860900651164,
+            准确率：0.0354
+***********************************************************
+model_url: /downloads/cloud-edge/resnet152_shallow.pts
+INFO:model:Load model from local path (/downloads/cloud-edge/resnet152_shallow.pts) | remote path (/downloads/cloud-edge/resnet152_shallow.pts)
+  0%|                                                                                                                                                   | 0/5000 [00:00<?, ?it/s]/workspace/model.py:32: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  inputs = torch.tensor(data).to(device=self.infer_device)
+  4%|█████▍                                                                                                                                 | 200/5000 [04:27<1:47:06,  1.34s/it]
+云边协同平均推理时间：1.2086761780639192,
+            云端平均推理时间：0.13637942461232047,
+            边端平均推理时间：0.04675778346275216,
+            平均上传时间：0.7623334856175664,
+            平均下发时间：0.02513266084206045,
+            准确率：0.0354
+***********************************************************
+model_url: /downloads/cloud-edge/resnet152_shallow.pts
+INFO:model:Load model from local path (/downloads/cloud-edge/resnet152_shallow.pts) | remote path (/downloads/cloud-edge/resnet152_shallow.pts)
+  0%|                                                                                                                                                   | 0/5000 [00:00<?, ?it/s]/workspace/model.py:32: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  inputs = torch.tensor(data).to(device=self.infer_device)
+  4%|█████▍                                                                                                                                 | 200/5000 [04:24<1:45:43,  1.32s/it]
+云边协同平均推理时间：1.198491432180452,
+            云端平均推理时间：0.1187266342675508,
+            边端平均推理时间：0.047780520880400246,
+            平均上传时间：0.7594103492907623,
+            平均下发时间：0.02347479056363082,
+            准确率：0.0354

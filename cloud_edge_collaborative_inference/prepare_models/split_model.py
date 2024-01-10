@@ -21,7 +21,9 @@ class MobileNetV2Deep(nn.Module):
     def forward(self, x):
         x = self.features(x)
         x = self.avgpool(x)
+        print(x.shape)
         x = torch.flatten(x, 1)
+        print(x.shape)
         x = self.classifier(x)
         return x
 
@@ -42,7 +44,6 @@ def create_mobile_net_v2_parts(original_model, split_layer):
 
 # Load the pretrained MobileNetV2 model
 model = models.mobilenet_v2(pretrained=True)
-
 model.eval()
 
 with torch.no_grad():
