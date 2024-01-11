@@ -29,15 +29,16 @@ def preprocess(item):
     return f(item)
 def main():
     logging.basicConfig(level=logging.INFO)
-    root = Context.get_parameters("dataset")
-    # root = 's3://cloud-edge/imagenet1000'
-    model = models.mobilenet_v2(pretrained=True).to(device='cuda')
+    root = "s3://cloud-edge/imagenet1000"
+    model = models.resnet152(pretrained=True).to(device='cuda')
     model.eval()
     times = []
     right_num = 0
+    debug = 1
+    flag = 0
     for s3_image_path in list_images_in_s3_path(root):
         image_path = download_file_to_temp(s3_image_path)
-        print('image_path',image_path)
+        # print('image_path',image_path)
         label = image_path.split('/')[-1].split('_')[0]
         img_rgb = preprocess(image_path)
         inputs = torch.tensor(img_rgb).to(device='cuda')
@@ -52,7 +53,10 @@ def main():
         # print(res,label)
         if(res==int(label)):
             right_num+=1
-        print(right_num)
+        if(debug):
+            if(flag==200):
+                break
+            flag+=1
     print(f'平均推理时间：{np.array(times).mean()},准确率：{right_num/5000}')
 
 if __name__=='__main__':
