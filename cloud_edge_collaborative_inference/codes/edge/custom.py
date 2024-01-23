@@ -1,6 +1,8 @@
 import os
 from copy import deepcopy
 import time
+import numpy as np
+import sys
 
 from sedna.common.utils import get_host_ip
 from sedna.common.class_factory import ClassFactory, ClassType
@@ -56,7 +58,8 @@ class SplitInference(JobBase):
         edge_time_end = time.time()
         edge_use_time = edge_time_end-edge_time_start
         edge_result = deepcopy(res)
-
+        print(sys.getsizeof(np.array(res)))
+        print(np.array(res).shape)
         self.lc_reporter.update_for_edge_inference()
         try:
             res = self.cloud.inference(

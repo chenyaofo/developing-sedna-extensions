@@ -48,7 +48,7 @@ def main():
     upload_times = []
     cloud_down_times = []
     right_num = 0
-    debug = 0
+    debug = 1
     flag = 0
     for s3_image_path in list_images_in_s3_path(root):
         image_path = download_file_to_temp(s3_image_path)
@@ -69,7 +69,7 @@ def main():
         if(res==int(label)):
             right_num+=1
         if(debug):
-            if(flag==10):
+            if(flag==200):
                 break
             flag+=1
     print(f'''云边协同平均推理时间：{np.array(edge_cloud_times).mean()},
