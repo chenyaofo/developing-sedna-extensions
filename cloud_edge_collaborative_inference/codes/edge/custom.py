@@ -58,6 +58,8 @@ class SplitInference(JobBase):
         edge_time_end = time.time()
         edge_use_time = edge_time_end-edge_time_start
         edge_result = deepcopy(res)
+        print(sys.getsizeof(np.array(res)))
+        print(np.array(res).shape)
         self.lc_reporter.update_for_edge_inference()
         try:
             res = self.cloud.inference(

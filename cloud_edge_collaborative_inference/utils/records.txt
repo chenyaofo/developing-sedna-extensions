@@ -1,56 +1,26 @@
-平均推理时间：0.03945631292921987,准确率：0.0354
-/opt/conda/envs/dev/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
-  warnings.warn(
-/opt/conda/envs/dev/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet152_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet152_Weights.DEFAULT` to get the most up-to-date weights.
-  warnings.warn(msg)
-/workspace/cloud_infer.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
-  inputs = torch.tensor(img_rgb).to(device='cuda')
-平均推理时间：0.03811250871686793,准确率：0.0354
-/opt/conda/envs/dev/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
-  warnings.warn(
-/opt/conda/envs/dev/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet152_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet152_Weights.DEFAULT` to get the most up-to-date weights.
-  warnings.warn(msg)
-/workspace/cloud_infer.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
-  inputs = torch.tensor(img_rgb).to(device='cuda')
-平均推理时间：0.03824414779890829,准确率：0.0354
-/opt/conda/envs/dev/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
-  warnings.warn(
-/opt/conda/envs/dev/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet152_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet152_Weights.DEFAULT` to get the most up-to-date weights.
-  warnings.warn(msg)
-/workspace/cloud_infer.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
-  inputs = torch.tensor(img_rgb).to(device='cuda')
-平均推理时间：0.038613633729925205,准确率：0.0354
-/opt/conda/envs/dev/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
-  warnings.warn(
-/opt/conda/envs/dev/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet152_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet152_Weights.DEFAULT` to get the most up-to-date weights.
-  warnings.warn(msg)
-/workspace/cloud_infer.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
-  inputs = torch.tensor(img_rgb).to(device='cuda')
-平均推理时间：0.0380385076228659,准确率：0.0354
-/opt/conda/envs/dev/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
-  warnings.warn(
-/opt/conda/envs/dev/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet152_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet152_Weights.DEFAULT` to get the most up-to-date weights.
-  warnings.warn(msg)
-/workspace/cloud_infer.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
-  inputs = torch.tensor(img_rgb).to(device='cuda')
-平均推理时间：0.038846897248604996,准确率：0.0354
-/opt/conda/envs/dev/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
-  warnings.warn(
-/opt/conda/envs/dev/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet152_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet152_Weights.DEFAULT` to get the most up-to-date weights.
-  warnings.warn(msg)
-/workspace/cloud_infer.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
-  inputs = torch.tensor(img_rgb).to(device='cuda')
-平均推理时间：0.04022112177379096,准确率：0.0354
-/opt/conda/envs/dev/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
-  warnings.warn(
-/opt/conda/envs/dev/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet152_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet152_Weights.DEFAULT` to get the most up-to-date weights.
-  warnings.warn(msg)
-/workspace/cloud_infer.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
-  inputs = torch.tensor(img_rgb).to(device='cuda')
-平均推理时间：0.03898094305351599,准确率：0.0354
-/opt/conda/envs/dev/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
-  warnings.warn(
-/opt/conda/envs/dev/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet152_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet152_Weights.DEFAULT` to get the most up-to-date weights.
-  warnings.warn(msg)
-/workspace/cloud_infer.py:45: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
-  inputs = torch.tensor(img_rgb).to(device='cuda')
+云边协同平均推理时间：0.4318772204479768,
+            云端平均推理时间：0.0840503635691173,
+            边端平均推理时间：0.005068616487493563,
+            平均上传时间：0.3171798993105912,
+            平均下发时间：0.024796490645527247,
+            准确率：0.0354
+(dev) root@gpu003:/workspace# python main.py 
+***********************************************************
+model_url: /downloads/cloud-edge/resnet152_shallow.pts
+INFO:model:Load model from local path (/downloads/cloud-edge/resnet152_shallow.pts) | remote path (/downloads/cloud-edge/resnet152_shallow.pts)
+云边协同平均推理时间：0.41772344574999454,
+            云端平均推理时间：0.0716486178820406,
+            边端平均推理时间：0.004920913212334932,
+            平均上传时间：0.3149788699932952,
+            平均下发时间：0.025292271998391222,
+            准确率：0.0354
+(dev) root@gpu003:/workspace# python main.py 
+***********************************************************
+model_url: /downloads/cloud-edge/resnet152_shallow.pts
+INFO:model:Load model from local path (/downloads/cloud-edge/resnet152_shallow.pts) | remote path (/downloads/cloud-edge/resnet152_shallow.pts)
+云边协同平均推理时间：0.4201212000491014,
+            云端平均推理时间：0.07131207167212643,
+            边端平均推理时间：0.004817756254281571,
+            平均上传时间：0.31596713042377833,
+            平均下发时间：0.02702343641822018,
+            准确率：0.0354
