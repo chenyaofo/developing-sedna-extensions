@@ -72,12 +72,15 @@ def main():
             if(flag==200):
                 break
             flag+=1
-    print(f'''云边协同平均推理时间：{np.array(edge_cloud_times).mean()},
+    log = f'''云边协同平均推理时间：{np.array(edge_cloud_times).mean()},
             云端平均推理时间：{np.array(cloud_times).mean()},
             边端平均推理时间：{np.array(edge_times).mean()},
             平均上传时间：{np.array(upload_times).mean()},
             平均下发时间：{np.array(cloud_down_times).mean()},
-            准确率：{right_num/5000}''')
+            准确率：{right_num/5000}'''
+    print(log)
+    with open('/home/zhengzekang/cloud-edge/developing-sedna-extensions/cloud_edge_collaborative_inference/utils','r') as f:
+        f.write(log)
 
 
 if __name__ == '__main__':

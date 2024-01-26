@@ -54,10 +54,11 @@ class SplitInference(JobBase):
 
     def inference(self, data=None, post_process=None, **kwargs):
         edge_time_start = time.time()
-        res = self.estimator.predict(data, **kwargs)
+        # res = self.estimator.predict(data, **kwargs)
+        res = data.tolist()
         edge_time_end = time.time()
         edge_use_time = edge_time_end-edge_time_start
-        edge_result = deepcopy(res)
+        edge_result = deepcopy(data)
         self.lc_reporter.update_for_edge_inference()
         try:
             res = self.cloud.inference(
