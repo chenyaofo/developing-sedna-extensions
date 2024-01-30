@@ -43,8 +43,4 @@ RUN PIP_INSTALL="/opt/conda/envs/dev/bin/pip install --no-cache-dir" && \
 COPY . /workspace/
 RUN mv /workspace/inference.py  /opt/conda/envs/dev/lib/python3.10/site-packages/sedna/service/server
 RUN mkdir tmp/imagenet1000 -p
-# ENTRYPOINT ["nvidia-smi"]
 CMD [ "tail", "-f", "/dev/null" ]
-
-# ENTRYPOINT ["/opt/conda/envs/dev/bin/python"]
-# CMD ["main.py"]  
